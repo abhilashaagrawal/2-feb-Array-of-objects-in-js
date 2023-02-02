@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Array</title>
+        <link href="./css/style.css" rel="stylesheet"/>
+        <style>
+             #myid{
+                padding: 16px;
+             }
+             body{
+                margin: 0px;
+             }
+        </style>
+        <script>
+            var students=['A',"R",`P`];
+            console.log(students[2]);
+            console.log(typeof students[1]);
+           
+        </script>
+        
+    </head>
+    <body>
+        <div id="myid"></div>
+        <strong class="myclass"></strong>
+        <script src="./js/script.js"></script>
+        <script>
+        let t=document.getElementById("myid")
+        t.innerHTML='Hello '+students[0];
+        t.style.color="#fff";
+        t.style.backgroundColor="blue";
+        </script>
+        <div data-ashi="ashi"></div>
+        <script>
+            var cars=['maruti',"opel",`volvo`];
+            let car=cars[0];
+            console.log(car);
+            cars[1]='suzuki';
+            document.querySelector('[data-ashi]').innerHTML="My Fav Cars : "+cars;
+
+        </script>
+    </body>
+</html>
